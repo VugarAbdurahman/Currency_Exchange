@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button,
+select,
+.exchange {
+  cursor: pointer;
+}
+
+.currency_container form p {
+  font-size: 18px;
+  color: #292929;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d60fc;
+  padding: 0 20px;
+}
+
+.currency_container {
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #a8a8a8;
+  padding: 40px;
+  border-radius: 7px;
+}
+.currency_container h1 {
+  font-size: 27px;
+  text-align: center;
+  color: #3b3b3b;
+}
+
+.currency_container form {
+  margin: 40px 0 20px 0;
+}
+.currency_container form .amount p {
+  margin-bottom: 10px;
+}
+.currency_container form input {
+  margin-bottom: 15px;
+  width: 100%;
+  appearance: textfield;
+  -moz-appearance: textfield;
+  font-size: 17px;
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.currency_container form .drop-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.currency_container form .drop-list .select-box {
+  border: 1px solid #999;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.currency_container form .drop-list .select-box select {
+  outline: none;
+  border: 0;
+  background: none;
+  margin-left: 10px;
+}
+
+.drop-list .select-box select::-webkit-scrollbar {
+  width: 5px;
+}
+.drop-list .select-box select::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.drop-list .select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+.currency_container form .drop-list .exchange {
+  font-size: 18px;
+  color: #252525;
+}
+
+.currency_container form button {
+  font-size: 17px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #6d3ddd;
+  outline: none;
+  border: 0;
+  margin-top: 15px;
+  transition: all ease 300ms;
+}
+.currency_container form button:hover {
+  background-color: #7f55e0;
+}
+
+@media (max-width: 410px) {
+  .currency_container h1 {
+    font-size: 20px;
+  }
+  .currency_container form .drop-list {
+    flex-direction: column;
+  }
+
+  .currency_container form .drop-list .exchange {
+    transform: rotate(90deg);
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 25px;
+  }
+}
