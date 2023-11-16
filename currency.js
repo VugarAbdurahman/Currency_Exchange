@@ -69,7 +69,7 @@ function getExchangeRate() {
   let to = dropList[1] // To
   showRate.innerText = "Getting exchange rate ..."
 
-  apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}latest/${from.value}`
+  apiUrl = `https://v6.exchangerate-api.com/v6/447bc40836e50c95ba64c513latest/${from.value}`
 
   fetch(apiUrl)
     .then((response) => response.json())
